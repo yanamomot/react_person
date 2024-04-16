@@ -1,5 +1,5 @@
 export const Person = ({ person }) => {
-  const { name, age, sex, isMarried, partnerName } = person;
+  const { name, age = 0, sex, isMarried, partnerName } = person;
   const partnerGender = sex === 'm' ? 'wife' : 'husband';
 
   return (
